@@ -20,9 +20,9 @@ services:
     volumes:
       - ./mnesia1:/var/lib/rabbitmq
     environment:
-      - RABBITMQ_ERLANG_COOKIE=123123
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=admin
+      - RABBITMQ_ERLANG_COOKIE=${RABBITMQ_ERLANG_COOKIE}
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
 
   rabbitmq2:
     build: .
@@ -32,9 +32,9 @@ services:
     volumes:
       - ./mnesia2:/var/lib/rabbitmq
     environment:
-      - RABBITMQ_ERLANG_COOKIE=123123
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=admin
+      - RABBITMQ_ERLANG_COOKIE=${RABBITMQ_ERLANG_COOKIE}
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
 
   rabbitmq3:
     build: .
@@ -44,6 +44,6 @@ services:
     volumes:
       - ./mnesia3:/var/lib/rabbitmq
     environment:
-      - RABBITMQ_ERLANG_COOKIE=123123
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=admin
+      - RABBITMQ_ERLANG_COOKIE=${RABBITMQ_ERLANG_COOKIE}
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
