@@ -23,7 +23,6 @@ services:
       - RABBITMQ_ERLANG_COOKIE=123123
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=admin
-      - RABBITMQ_DEFAULT_VHOST=rabbitmq1
 
   rabbitmq2:
     build: .
@@ -36,7 +35,6 @@ services:
       - RABBITMQ_ERLANG_COOKIE=123123
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=admin
-      - RABBITMQ_DEFAULT_VHOST=rabbitmq1
 
   rabbitmq3:
     build: .
@@ -49,4 +47,3 @@ services:
       - RABBITMQ_ERLANG_COOKIE=123123
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=admin
-      - RABBITMQ_DEFAULT_VHOST=rabbitmq1
