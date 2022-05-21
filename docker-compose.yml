@@ -26,8 +26,6 @@ services:
 
   rabbitmq2:
     build: .
-    links:
-      - rabbitmq1
     hostname: rabbitmq2
     volumes:
       - ./mnesia2:/var/lib/rabbitmq
